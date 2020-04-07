@@ -15,6 +15,9 @@
     <meta charset="utf-8" />
     <!--ESTILO-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--Javascript-->
+    <script type="text/javascript" src="javascript/main.js">
+    </script>
 </head>
 <!--Conteudo do site-->
 
@@ -35,10 +38,20 @@
         <h2>Bem vindo</h2>
     </header>
     <!--COnteudo principal-->
+    <button type="button" onclick="botao()">
+        Clique aqui !
+</button>
+    <hr/>
+    <h3 id="agradecimento" onclick="redirecionar"></h3>
+    <hr/>
+    <select onchange="change(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
 
-    <!--RODAPE-->
     <footer>
-        <h3>&copy; Allyson de Oliveira Brandão - Direitos Reservados.</h3>
+        <h3 id="mousemove" onmouseover="trocar()" onmouseout="voltar()">&copy; Allyson de Oliveira Brandão - Direitos Reservados.</h3>
     </footer>
 
 </body>
